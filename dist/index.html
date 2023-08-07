@@ -114,11 +114,18 @@ h3, h4, h5, h6 {
 
 .projects > ol > li {
   margin-bottom: 24px;
+  position: relative;
 }
 
 .projects > ol > li > header {
   justify-content: space-between;
   display: flex;
+}
+
+.projects > ol > li > img {
+  position: absolute;
+  top: 24px;
+  right: 0;
 }
 
 .projects > ol > li h3 {
@@ -138,7 +145,7 @@ h3, h4, h5, h6 {
 </style>
     <style>#skills {
   width: 500px;
-  height: 310px;
+  height: 300px;
 }
 
 .skills > .wrapper {
@@ -250,40 +257,37 @@ h3, h4, h5, h6 {
                   </span>
                 </header>
                 <p>
-                  一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
-      
+                  一款基于 <strong>原生JavaScript</strong> / <strong>CSS3</strong> / <strong>DOM</strong>的网页应用
                 </p>
                 <p>
-                  主要组件有日期选择器、弹出框、<strong>下拉更新</strong>、树形选择器等。
-      
+                  这是一个日历应用，特点是能够快速查看当天日期 ，能够记事，安排当天和未来几天的行程。     
                 </p>
                 <p>
-                  已被公司前端同事广泛使用，有效提高前端团队的开发效率。
-      
+                  该项目使用了封装的DOM，制作过程让我对 封装DOM库 和数据处理有了更深刻的认识。
                 </p>
                 <p>
-                  制作过程让我对 TypeScript 和单元测试有了新的认识。
-                  我将其总结成了一篇博客《TS 泛型的使用》。
+                  之后我将封装的DOM总结和拓展，写成了<strong>对象风格的简易DOM库</strong>，上传GitHub
                 </p>
+                <img src="/2.39edb27f.png" alt="" width="100">
               </li>
               <li>
                 <header>
                   <h3>快导-前端导航网站</h3>
                   <span>
                     <a href="https://github.com/Abtruzzi/nav-1">源码链接</a>
-                    <a href="https://abtruzzi.github.io/nav-1/dist/index.html">项目预览</a>
+                    <a href="https://abtruzzi.github.io/nav-1/src/index.html">项目预览</a>
                   </span>
                 </header>
                 <p>
-                  这是一个基于 <strong>Rails</strong> 和 <strong>Vue</strong> 的多页面应用。
+                  这个项目使用 <strong>原生JavaScript</strong>、监听键盘事件 实现的一个可自定义导航网站
                 </p>
                 <p>
-                  主要功能包括微信登录、手机验证、直播、点播、反盗版、答题系统、课程管理系统等。
-                  从数据库设计到前端展示，都是由我主导，另有两名前端辅助我。
+                  主要功能包括添加网站、删除网站、使用键盘快捷访问网站、百度搜索等功能。
                 </p>
                 <p>
-                  该系统<strong>大幅提高教学效率</strong>，优化教学流程，受到公司和用户的好评。
+                  技术栈：<strong>JavaScript + HTML5 + LocalStorage + CSS + Media query</strong>
                 </p>
+                <img src="/3.8013c83b.png" alt="" width="100">
               </li>
               <li>
                 <header>
@@ -294,16 +298,15 @@ h3, h4, h5, h6 {
                   </span>
                 </header>
                 <p>
-                  一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+                  这是一个是基于<strong>ES6</strong>、 <strong>CSS3</strong>的动画演出作品。
                 </p>
-      
+                  实现了<strong>暂停、快速播放</strong>等功能，能够随时控制动画演出过程。
                 <p>
-                  这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-                  而且可以通过图表查看自己的消费习惯。
+                  该项目在CSS方面大量使用<strong>伪元素</strong>、<strong>Animation</strong>、<strong>绝对定位</strong>、<strong>相对定位</strong>。
+                </p><p>
+                  在js编程时使用面<strong>向对象的思维</strong>重构代码，让代码更加简洁、凝练。
                 </p>
-                <p>
-                  该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
-                </p>
+                <p></p>
               </li>
               <li>
                 <header>
@@ -314,15 +317,13 @@ h3, h4, h5, h6 {
                   </span>
                 </header>
                 <p>
-                  一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
-                </p>
-      
-                <p>
-                  这是我从自己的需求出发，设计出的极简记账应用，特点是快速记账，
-                  而且可以通过图表查看自己的消费习惯。
+                  这是一个使用HTML5的 <strong>Canvas</strong> 标签，实现了画线功能的画板项目。
                 </p>
                 <p>
-                  该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
+                  在项目的开发过程中，对兼容移动端进行了实践，能很好的适配pc端网页和移动端
+                </p>
+                <p>
+                  该项目使用了 <strong>javascript + HTML5 + Canvas + CSS3</strong>，让我对HTML5有了深刻的理解和应用。
                 </p>
               </li>
             </ol>
@@ -339,7 +340,6 @@ h3, h4, h5, h6 {
                 <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
                 <li>熟练掌握 React全家桶的使用，包括 create-react-app、ReactRouter、Redux 等</li>
                 <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
-                <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
                 <li>了解 <strong>Webpack 的配置和优化</strong></li>
               </ul>
             </div>
@@ -352,7 +352,7 @@ h3, h4, h5, h6 {
               <li>
                 <header>
                   <h3>自己写的 DOM 库</h3>
-                  <a href="#">源码链接</a>
+                  <a href="https://github.com/Abtruzzi/DOM-1">源码链接</a>
                 </header>
                 <p>实现了元素选择、元素创建、<strong>事件委托</strong>、滑动手势等常见功能</p>
               </li>
@@ -370,9 +370,9 @@ h3, h4, h5, h6 {
                   <span><time>2017年7月</time>~<time>2018年2月</time></span>
                 </header>
                 <ul>
-                  <li>独立负责某 CRM 系统的开发与维护（后端使用Groovy，前端使用JS）</li>
-                  <li>负责全部门 <strong>UI 框架的开发</strong>，包括对话框、<strong>树形组件</strong>、<strong>日期选择器</strong>等常用组件</li>
-                  <li>定期组织内部分享，包括 Git 的使用、<strong>ES6 新特性</strong>、TypeScript 等话题</li>
+                  <li>负责某后台管理系统的开发与维护（前端使用JS）</li>
+                  <li>负责网站的开发和维护</li>
+                  <li>定期组织内部分享，包括 CSS 布局、<strong>ES6 新特性</strong>、GitHub的使用等话题</li>
                 </ul>
               </li>
               <li>
@@ -383,13 +383,13 @@ h3, h4, h5, h6 {
                 </header>
                 <ul>
                   <li>
-                    独立负责 iPad 客户端的后台 <strong>Rails</strong> 开发和前端开发工作
+                    主要负责线上客户的发展，维护与客户的良好关系，搜集客户在使用公司产品时的反馈信息
                   </li>
                   <li>
-                    负责团队基础库开发、单元测试、文档撰写，确保测试<strong>覆盖率达到 90%</strong> 以上
+                    负责和技术部门对接，及时把资质满足条件的客户接入产品中。
                   </li>
                   <li>
-                    作为前端骨干，负责给前端较弱的同事进行培训，提高其前端开发工作效率
+                    负责给新入职的同事进行培训，提高其工作能力
                   </li>
                 </ul>
               </li>
